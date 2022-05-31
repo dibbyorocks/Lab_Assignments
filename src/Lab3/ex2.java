@@ -13,10 +13,17 @@ public class ex2 {
         System.out.print("|");
         for (int i = 0; i < str.length(); i++) {
             char[] s1 = strArray[i].toCharArray();
-            for (int j = s1.length - 1; j >= 0; j--) {
+
+            for (int j = s1.length-1; j >= 0; j--) {
+                if(s1.length==1)
+                {
+                    return;
+                }
                 System.out.print(s1[j]);
+
+                }
             }
             System.out.print(" ");
         }
     }
-}
+
